@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4_Buoi3</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    #menu {
+        width: 600px;
+        height: 50px;
+        background-color: palevioletred;
+        margin: 50px auto;
+    }
+
+    ul.contener>li {
+        list-style: none;
+        float: left;
+        padding: 0px 20px 0px 20px;
+        line-height: 50px;
+        border: solid 1px blue;
+        text-align: center;
+    }
+
+    ul.contener>li:hover {
+        background-color: white;
+        transition: ease-in 0.30s;
+        /* -moz-transition: ease-in 0.30s; */
+    }
+
+    ul.submenu {
+        width: 150px;
+        background-color: palevioletred;
+        min-height: 150px;
+        display: none;
+    }
+
+    ul.submenu li {
+        list-style: none;
+        display: block;
+        text-decoration: none;
+        border: 1px solid blue;
+        line-height: 40px;
+        text-indent: 10px;
+    }
+
+    ul.contener>li:hover ul.submenu {
+        display: block;
+    }
+
+    ul.submenu li:hover {
+        background-color: white;
+        display: block;
+        transition: ease-in 0.30s;
+    }
+    ul.submenu2{
+        width: 150px;
+        background-color: palevioletred;
+        min-height: 150px;
+        display: none;
+    }
+    ul.submenu2 li{
+        list-style: none;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid blue;
+        line-height: 40px;
+        text-indent: 10px;
+    }
+    ul.submenu>li:hover ul.submenu2{
+        display: block;
+    }
+    ul.submenu2 li:hover{
+        display: block;
+        transition: ease-in 0.30s;
+    }
+</style>
+
+<body>
+    <div id="menu">
+        <ul class="contener">
+            <li>Trang chủ</li>
+            <li>Quần Áo Nam
+                <ul class="submenu">
+                    <li>Áo Cộc Tay</li>
+                    <li>Quần Jean</li>
+                    <li>Đồng Hồ Đeo Tay
+                        <ul class="submenu2">
+                            <li> Đồng Hồ Casio</li>
+                            <li>Đồng hồ Rolex</li>
+                            <li>Đồng Hồ Hàng Mã</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Quần Áo Nữ</li>
+            <li>Quần Áo Trẻ Em</li>
+        </ul>
+    </div>
+</body>
+
+</html>
