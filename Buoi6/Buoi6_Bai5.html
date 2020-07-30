@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi6_Bai5</title>
+</head>
+
+<body>
+    <script>
+        var soNguyenDuong = [];
+        soNguyenDuong[0] = [35, 78, 33, 1];
+        soNguyenDuong[1] = [9, 104, 22, 74];
+        soNguyenDuong[2] = [155, 75, 23, 44];
+        soNguyenDuong[3] = [42, 44, 8, 100];
+        var soLonNhat = soNguyenDuong[0][0];
+        var soNhoNhat = soNguyenDuong[0][0];
+        for (var i = 0; i < soNguyenDuong.length; i++) {
+            for (var j = 0; j < soNguyenDuong.length; j++) {
+                if (soLonNhat < soNguyenDuong[i][j]) {
+                    soLonNhat = soNguyenDuong[i][j];
+                }
+                if (soNhoNhat > soNguyenDuong[i][j]) {
+                    soNhoNhat = soNguyenDuong[i][j];
+                }
+            }
+        }
+        document.write("Ta có dãy là: " + soNguyenDuong + "</br>");
+        document.write("Số lớn nhất: " + soLonNhat + "</br>");
+        document.write("Số nhỏ nhất: " + soNhoNhat);
+    </script>
+</body>
+
+</html>

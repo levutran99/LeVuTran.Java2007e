@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi6_Bai4</title>
+</head>
+<body>
+    <h2>JavaScipt</h2>
+</body>
+<script>
+    var mang = [3,5,14,80,5,62,43,24];
+    var n = window.prompt(" [3,5,14,80,5,62,43,24]....Nhập phần tử mà bạn muốn xóa : ");
+    var a =mang.length;
+    if(n>=0 && n<a){
+        delete mang[n];
+        document.write("Mảng sau khi đã xóa phần tử thứ  " +n+ "  là :"+ mang);
+    }
+    else{
+        document.write("Phần thử không tồn tại.");
+    }
+</script>
+</html>
