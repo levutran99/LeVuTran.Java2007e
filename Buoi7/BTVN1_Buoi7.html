@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN1_Buoi7</title>
+</head>
+
+<body>
+    <script>
+        var chuoiBanDau = window.prompt("nhập chuỗi: ");
+
+        function daoChuoi() {
+            var output = " "
+            for (var i = chuoiBanDau.length - 1; i >= 0; i--) {
+                output += chuoiBanDau[i]
+            }
+            prompt("Chuỗi sau khi đảo là:  ", output)
+        }
+        daoChuoi()
+    </script>
+</body>
+
+</html>

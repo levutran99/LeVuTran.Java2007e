@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chuan hoa chuoi</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var input = prompt("Nhap vao chuoi bat ky: ");
+    var newContent = input.trim();
+    var array = newContent.split(" ");
+    var result = "";
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+        newArray[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+    }
+    result += newArray[i];
+    var resultArray = newArray.join("-");
+    prompt(resultArray);
+</script>
+
+</html>
