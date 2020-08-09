@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>May tinh bo tui</title>
+</head>
+
+<body>
+    <form name="f1">
+
+        <div align="left" class="container">
+            <input type="text" name="display" class="style2" align="left" style="width: 184px;margin-top: 0.3cm;" />
+            <br />
+            <input type="button" class="style3" onClick="donum('1')" value="1" />
+            <input type="button" class="style3" onClick="donum('2')" value="2" />
+            <input type="button" class="style3" onClick="donum('3')" value="3" />
+            <input type="button" class="style3" onClick="donum('+')" value="+" />
+            <input type="button" class="style3" onClick="donum('-')" value="-" />
+            </br>
+            <input type="button" class="style3" onClick="donum('4')" value="4" />
+            <input type="button" class="style3" onClick="donum('5')" value="5" />
+            <input type="button" class="style3" onClick="donum('6')" value="6" />
+            <input type="button" class="style3" onClick="donum('*')" value="*" />
+            <input type="button" class="style3" onClick="donum('/')" value="/" />
+            <br />
+            <input type="button" class="style3" onClick="donum('7')" value="7" />
+            <input type="button" class="style3" onClick="donum('8')" value="8" />
+            <input type="button" class="style3" onClick="donum('9')" value="9" />
+            <input type="button" class="style3" onClick="donum('(')" value="(" />
+            <input type="button" class="style3" onClick="donum(')')" value=")" />
+            </br>
+            <input type="button" class="style3" onClick="xoa()" value="C" />
+            <input type="button" class="style3" onClick="xoamotkytu()" value="Del" />
+            <input type="button" class="style3" onClick="donum('0')" value="0" />
+            <input type="button" class="style3" onClick="tinh()" value="=" style="width: 70px;" />
+
+            </span>
+        </div>
+    </form>
+    <script>
+        function donum(x) {
+            f1.display.value = f1.display.value + x;
+        }
+
+        function xoamotkytu() {
+            chuoi = new String("");
+            chuoi = f1.display.value;
+            len = chuoi.length;
+            //chuoi=donum();
+            s1 = chuoi.substring(0, len - 1);
+            f1.display.value = s1;
+        }
+
+        function tinh() {
+
+            chuoi = f1.display.value;
+            len = chuoi.length;
+            for (i = 0; i < len; i++)
+                if ((chuoi.charAt(i) != "!") || (chuoi.charAt(i) != "^"))
+                    f1.display.value = eval(chuoi);
+
+        }
+
+        function giaithua(n) {
+
+            if (n == 1)
+                return n;
+            else return n * giaithua(n - 1);
+        }
+
+        function xoa() {
+            f1.display.value = " ";
+        }
+    </script>
+    </form>
+</body>
+<style>
+    .container {
+        width: 220px;
+        height: 200px;
+        border: solid 1px black;
+        background-color: cornflowerblue;
+        margin-top: 1cm;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: 350px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    form * {
+        box-sizing: border-box;
+    }
+    
+    .container {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    .style3 {
+        height: 35px;
+        width: 32px;
+        margin: 1px;
+    }
+</style>
+
+</html>
