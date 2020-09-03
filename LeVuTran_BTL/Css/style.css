@@ -1,0 +1,384 @@
+.container #khung {
+    position: relative;
+    z-index: 0;
+    margin-bottom: -737px;
+}
+
+.container #khung img {
+    width: auto;
+    height: 200px;
+}
+
+body {
+    font-family: "FF Mark W05";
+    font-size: 13px;
+    width: auto;
+    margin: 0px auto;
+    height: auto;
+}
+
+#menu_top {
+    width: 1700px;
+    background: rgb(17, 17, 17);
+    height: 72px;
+    margin-top: -17px;
+    position: relative;
+    position: fixed;
+    z-index: 2;
+}
+
+#menu_top #earth {
+    line-height: 70px;
+}
+
+#banner {
+    margin-left: 4.5cm;
+    margin-top: 120px;
+    height: 500px;
+    width: 1000px;
+}
+
+#main #left {
+    margin-top: 160px;
+    margin-left: 4cm;
+    width: auto;
+    float: left;
+    min-height: 400px;
+}
+
+#footer {
+    width: auto;
+    height: auto;
+    text-align: center;
+    clear: left;
+    line-height: 60px;
+    background: rgb(17, 17, 17);
+}
+
+#menu_top ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu_top>ul>li {
+    margin-left: 0.9cm;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#menu_top>ul>li>a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: #F9F9F9;
+    height: 72px;
+    line-height: 70px;
+    padding: 0px 20px 0px 20px;
+}
+
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom: 1.5px solid #ccc;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#main #left ul li img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#main {
+    margin-top: 20px;
+}
+
+#footer ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer ul li {
+    width: auto;
+    list-style: none;
+    margin-left: 7.5cm;
+}
+
+#footer ul li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #7E7E7E;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+#footer .footer_top {
+    width: 1000px;
+    height: 40px;
+    margin-left: 2, 5cm;
+}
+
+#footer #riot {
+    height: 100px;
+    width: auto;
+}
+
+#footer #riot img {
+    text-align: center;
+    margin-top: 1cm;
+}
+
+#footer #icon {
+    display: block;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    padding-left: 5.5cm;
+    padding-top: 20px;
+}
+
+#footer #icon li img {
+    width: 34px;
+    height: 24px;
+    padding-left: 10px;
+}
+
+#footer p a {
+    color: #7E7E7E;
+}
+
+#banner video {
+    margin-top: -310px;
+    position: relative;
+    border: 5px outset;
+}
+
+#banner img {
+    display: inline-block;
+    width: 500px;
+    height: 230px;
+    position: relative;
+    z-index: 1;
+    margin-left: 6.5cm;
+    margin-top: 2cm;
+}
+
+#main #left a {
+    text-decoration: none;
+    color: #257372;
+}
+
+#main #left h4 {
+    font-size: 1.35em;
+    margin-top: 0px;
+}
+
+#main #left p {
+    font-size: 1.1em;
+    font-family: open_sansregular, Arial, Tahoma, san-serif;
+}
+
+#main #left span {
+    text-transform: uppercase;
+    color: #888888;
+    font-size: .81429em;
+    font-weight: normal;
+    float: left;
+    margin-top: 2.2cm;
+}
+
+.submenu {
+    /* background-color: #fff; */
+    background: rgb(17, 17, 17);
+    width: 200px;
+    height: 450px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu li a {
+    color: #F9F9F9;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+#menu_top li:hover .submenu {
+    display: block;
+}
+
+.submenu2 {
+    background: rgb(17, 17, 17);
+    padding: 12px 32px;
+    width: 200px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.submenu2 li {
+    list-style: none;
+}
+
+.submenu2 li a {
+    color: #F9F9F9;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+#menu_top li:hover .submenu2 {
+    display: block;
+}
+
+.submenu3 {
+    background: rgb(17, 17, 17);
+    padding: 12px 32px;
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.submenu3 li {
+    list-style: none;
+}
+
+.submenu3 li a {
+    color: #F9F9F9;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+#menu_top li:hover .submenu3 {
+    display: block;
+}
+
+#menu_top>ul>li>a:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgb(92, 192, 250);
+}
+
+.submenu>li>a:hover {
+    background: #7E7E7E;
+    color: #F9F9F9;
+}
+
+.submenu2>li>a:hover {
+    background: #7E7E7E;
+    color: #F9F9F9;
+}
+
+.submenu3>li>a:hover {
+    background: #7E7E7E;
+    color: #F9F9F9;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 8px;
+}
+
+#menu_top #play>a:hover {
+    height: 40px;
+    background: #0daac2;
+    border-radius: 2px;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#main #left img:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.5s;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin-left: 8cm;
+    float: left;
+    padding-top: 20px;
+}
+
+
+/* Ẩn các slider */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Định dạng nội dung Caption */
+
+.text {
+    color: rgba(0, 0, 0, 0.863);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
